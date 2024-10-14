@@ -25,7 +25,7 @@ function switchTab(newTab) {
       searchform.classList.add("active");
     } else {
       searchform.classList.remove("active");
-      userInfoContainer.classList.add("active");
+      userInfoContainer.classList.remove("active");
       getfromSessionStorage();
     }
   }

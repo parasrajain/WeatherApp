@@ -10,100 +10,106 @@
       href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300;400;500;600;700&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div>
+    <div class="wrapper">
       <h2 class="head">Weather App</h2>
 
-      <div>
-        <div class="usertab">Your Weather</div>
-        <div class="searchtab">Search Weather</div>
+      <div class="options">
+        <div class="usertab tab">Your Weather</div>
+        <div class="searchtab tab">Search Weather</div>
       </div>
 
       <!-- container -->
       <div class="weather-container">
-        <!-- location access -->
+                                                  <!-- location access -->
 
-      <div class="location-page">
-        <div>
-            <img src="Images/location.png" alt="" />
+        <div class="location-page">
+          <div>
+            <img src="Images/location.png" alt=""  width="80px" height="80px">
           </div>
-    
+
           <div class="location-detail1">Grant Location Access</div>
-    
-          <div class="location-detail2">Allow Access To Get Weather Information</div>
-    
+
+          <div class="location-detail2">
+            Allow Access To Get Weather Information
+          </div>
+
           <button class="location-btn">Grant Access</button>
-      </div>
+        </div>
 
-                                    <!-- search weather -->
-      <div class="search-container">
-        <form class="search-container" >
-          <input placeholder="Search for City..." class="search-area" spellcheck="false" >
-          <button class="search-btn" type="submit">
-            <img
-              src="Images/search.png"
-              width="20"
-              height="20"
-              loading="lazy"
+                                                  <!-- search weather -->
+        <div class="search-container">
+          <form class="search-form">
+            <input
+              placeholder="Search for City..." style="color: aliceblue;"
+              class="search-area"
+              spellcheck="false"
             />
-          </button>
-        </form>
-      </div>
-
-                                    <!-- your weather -->
-
-      <div class="user-info">
-        <!-- city and flag -->
-        <div>
-          <div class="city-name"></div>
-          <div class="city-flag"></div>
+            <button class="search-btn" type="submit">
+              <img
+                src="Images/search.png"
+                width="20"
+                height="20"
+                loading="lazy"
+              />
+            </button>
+          </form>
         </div>
 
-        <!-- about sky -->
-        <div class="about-sky"></div>
+                                                  <!-- your weather -->
 
-        <!-- sum image -->
-        <div class="sum-img"></div>
-
-        <!-- temperature -->
-        <div class="temp"></div>
-
-        <!-- cards -->
-        <div>
-          <div>
-            <div><img src="Images/wind.png" alt=""></div>
-            <div class="text">Windspeed</div>
-            <div class="Windspeed"></div>
+        <div class="user-info">
+          <!-- city and flag -->
+          <div class="user-weather-details">
+            <div class="cityname-flag">
+              <div class="city-name"></div>
+              <div> <img crossorigin="anonymous" class="city-flag"></div>
+            </div>
+  
+            <!-- about sky -->
+            <div class="about-sky"></div>
+  
+            <!-- sum image -->
+            <div > <img crossorigin="anonymous" class="sum-img" alt=""></div>
+  
+            <!-- temperature -->
+            <div class="temp"></div>
           </div>
 
-          <div>
-            <div><img src="Images/humidity.png" alt=""></div>
-            <div class="text">Humidity</div>
-            <div class="Humidity"></div>
-          </div>
+          <!-- cards -->
+          <div class="cards">
+            <div class="parameter">
+              <img src="Images/wind.png" alt="" class="parameter1">
+              <div class="text">Windspeed</div>
+              <div class="Windspeed parameter3"></div>
+            </div>
 
-          <div>
-            <div> <img src="Images/cloud.png" alt=""></div>
-            <div class="text">Clouds</div>
-            <div class="Clouds"></div>
+            <div class="parameter">
+              <div><img src="Images/humidity.png" alt="" class="parameter1"></div>
+              <div class="text">Humidity</div>
+              <div class="Humidity parameter3"></div>
+            </div>
+
+            <div class="parameter">
+              <div><img src="Images/cloud.png" alt="" class="parameter1"></div>
+              <div class="text">Clouds</div>
+              <div class="Clouds parameter3"></div>
+            </div>
           </div>
         </div>
+
+        <!-- loading -->
+
+        <div class="sub-container loading-container">
+          <img src="Images/loading.gif" width="150" height="150" loading="lazy" >
+          <p class="loading-text">Loading...</p>
+        </div>
+
       </div>
-
-      <!-- loading -->
-
-      <div class="sub-container loading-container">
-        <img src="Images/loading.gif" width="150" height="150" />
-        <p class="loading-text">Loading</p>
-      </div>
-      </div>
-
-
     </div>
 
-
     <script src="script.js"></script>
-
   </body>
 </html>
