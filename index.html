@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div>
+      <h2 class="head">Weather App</h2>
+
+      <div>
+        <div class="usertab">Your Weather</div>
+        <div class="searchtab">Search Weather</div>
+      </div>
+
+      <!-- container -->
+      <div class="weather-container">
+        <!-- location access -->
+
+      <div class="location-page">
+        <div>
+            <img src="Images/location.png" alt="" />
+          </div>
+    
+          <div class="location-detail1">Grant Location Access</div>
+    
+          <div class="location-detail2">Allow Access To Get Weather Information</div>
+    
+          <button class="location-btn">Grant Access</button>
+      </div>
+
+                                    <!-- search weather -->
+      <div class="search-container">
+        <form class="search-container" >
+          <input placeholder="Search for City..." class="search-area" spellcheck="false" >
+          <button class="search-btn" type="submit">
+            <img
+              src="Images/search.png"
+              width="20"
+              height="20"
+              loading="lazy"
+            />
+          </button>
+        </form>
+      </div>
+
+                                    <!-- your weather -->
+
+      <div class="user-info">
+        <!-- city and flag -->
+        <div>
+          <div class="city-name"></div>
+          <div class="city-flag"></div>
+        </div>
+
+        <!-- about sky -->
+        <div class="about-sky"></div>
+
+        <!-- sum image -->
+        <div class="sum-img"></div>
+
+        <!-- temperature -->
+        <div class="temp"></div>
+
+        <!-- cards -->
+        <div>
+          <div>
+            <div><img src="Images/wind.png" alt=""></div>
+            <div class="text">Windspeed</div>
+            <div class="Windspeed"></div>
+          </div>
+
+          <div>
+            <div><img src="Images/humidity.png" alt=""></div>
+            <div class="text">Humidity</div>
+            <div class="Humidity"></div>
+          </div>
+
+          <div>
+            <div> <img src="Images/cloud.png" alt=""></div>
+            <div class="text">Clouds</div>
+            <div class="Clouds"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- loading -->
+
+      <div class="sub-container loading-container">
+        <img src="Images/loading.gif" width="150" height="150" />
+        <p class="loading-text">Loading</p>
+      </div>
+      </div>
+
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+  </body>
+</html>
